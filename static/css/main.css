@@ -1,0 +1,60 @@
+#title
+{
+	text-align: center;
+	font-family: "Comic Sans MS"
+}
+
+#goals
+{
+position: fixed;
+right: 120px;
+font-family: "Comic Sans MS";
+}
+
+#goalsOuterBox
+{
+position: fixed;
+right: 40px;
+bottom: 30px;
+border-radius: 25px;
+background: blue;
+ padding: 20px; 
+ width: 200px;
+ height: 450px; 
+ text-align: center;
+ font-family: "Comic Sans MS";
+
+
+}
+
+#savingsBox
+{
+	border-radius: 25px;
+	background : pink;
+	padding: 20px; 
+    width: 150px;
+    height: 150px; 
+    text-align: center;
+    font-family: "Comic Sans MS";
+
+
+}
+
+#wishList
+{
+	border-radius: 25px;
+	padding: 20px; 
+    width: 150px;
+    height: 175px; 
+    background : green;
+    text-align: center;
+    font-family: "Comic Sans MS";
+}
+
+form
+{
+	position: fixed;
+	left: 30%;
+	bottom: 30px;
+}
+
