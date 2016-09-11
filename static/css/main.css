@@ -1,60 +1,85 @@
-#title
+html
 {
-	text-align: center;
-	font-family: "Comic Sans MS"
+	height: 100%;
+	width: 100;
+}
+body
+{
+	margin: 0;
+	height: 100%;
+	width: 100%;
+}
+h1
+{
+	font-family: "Comic Sans MS";
+	color: purple;
+}
+h3
+{
+	display: block !important;
+}
+.container{
+	display: inline-flex;
+	flex-direction: column;
+	flex-wrap: wrap;
 }
 
+#ONE
+{
+	height: 100%;
+	width: 69%;
+}
+
+#TWO
+{
+	height:100%;
+	width: 30%;
+}
 #goals
 {
-position: fixed;
-right: 120px;
 font-family: "Comic Sans MS";
+color: purple;
 }
 
 #goalsOuterBox
 {
-position: fixed;
-right: 40px;
-bottom: 30px;
-border-radius: 25px;
 background: blue;
  padding: 20px; 
  width: 200px;
  height: 450px; 
  text-align: center;
  font-family: "Comic Sans MS";
+ font-weight: 5px;
+ color: purple;
 
 
 }
-
+img
+{
+	width: 3em;
+	height: auto;
+}
 #savingsBox
 {
-	border-radius: 25px;
 	background : pink;
-	padding: 20px; 
+	padding: 20px;
+	padding-right: 30px; 
     width: 150px;
     height: 150px; 
     text-align: center;
     font-family: "Comic Sans MS";
-
+    color: purple;
 
 }
 
-#wishList
+#level
 {
-	border-radius: 25px;
+	color: purple;
 	padding: 20px; 
-    width: 150px;
+	padding-right: 30px;
     height: 175px; 
     background : green;
     text-align: center;
     font-family: "Comic Sans MS";
-}
-
-form
-{
-	position: fixed;
-	left: 30%;
-	bottom: 30px;
 }
 
