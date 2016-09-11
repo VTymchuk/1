@@ -1,54 +1,87 @@
 <!DOCTYPE html>
 <html lang = "en">
 <head>
+<link rel="stylesheet" href="http://cdn.pydata.org/bokeh/release/bokeh-0.12.0.min.css" type="text/css" />
+<script type="text/javascript" src="http://cdn.pydata.org/bokeh/release/bokeh-0.12.0.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Baloo+Tamma" rel="stylesheet">
 <link rel = "stylesheet" type = "text/css" href = "../static/css/main.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.1.3/js.cookie.min.js"></script>
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/r/bs-3.3.5/jq-2.1.4,dt-1.10.8/datatables.min.css">
+<script src="https://cdn.datatables.net/r/bs-3.3.5/jqc-1.11.3,dt-1.10.8/datatables.min.js"></script>
+<script src="https://code.highcharts.com/stock/highstock.js"></script>
+<script src="https://code.highcharts.com/stock/modules/exporting.js"></script>
+<script src="https://www.blackrock.com/tools/api/js/hackathon"></script>
+
+
 <title> My Homepage </title>
+
 </head>
 <body>
 <nav id="navbar">
-	<a>Balance</a>
-	<a>Investments</a>
+	<a href="">Balance</a>
+	<a href="http://localhost:5000/templates/main.html#section-two-container">Investments</a>
 </nav>
 <div id="section-one-container">
 	<div class = "container" id = "ONE">	
 		<h1> My Balance Graph </h1>
-		<iframe></iframe>
+		<iframe id="ifr" src="../graph.html"></iframe>
 
 		<div class = "container" id = "PROJECTIONS">
-			<form> 
+			<!--<form> 
 				In
-				<select name = "time">
-				<option value="1">one week</option>
-				<option value="2">two weeks</option>
-				<option value="4">one month</option>
+				<select name = "time" id="duration">
+				<option value="7">one week</option>
+				<option value="14">two weeks</option>
+				<option value="30">one month</option>
 				</select>
-				your balance will be {% balance %}
-			</form>
-			<br>
-			<form> 
-				To buy something that costs <input type = "number" > dollars will take {%%} weeks
-			</form>
+				your balance will be <span id="bal"></span>
+			</form>-->
+			<p> According to your current spending patterns, you'll have <span id="here">_____</span> at the end of the year! </p>
 		</div>
 	</div>
 	<div class = "container" id = "TWO"> 
 		<h2> My Goals </h2>
 		<div id = "goalsOuterBox">
 			<div id = "savingsBox"> 
-				<h2>Saving</h2>
+				<h2>Savings</h2>
 				<form>
-					Target
-					<input type = "number" name = "savingGoal"> 
+					
+					<input id= "TARGET" type = "number" name = "savingGoal"> 
+					<button type="submit" id="saveTarget"> Calculate! </button>
+
 				</form>
 			</div>
+			<br>
 			<br>
 			<div id = "level"> <h2>Your Level <h2>
 				<img src = "../static/css/ninja.png"></div>
 		</div>
 	</div>
 </div>
-<div id="section-two-container">
+<div class = "container" id="section-two-container">
+	<div id = "DIVONE">
+		<label for="cash"> $ to invest: </label>
+		<input placeholder="Enter $ to invest" type = "number" id = "cash"	class="invest-form" placeholder="$"> </input> 
+		<button type="submit" id="invest" class="invest-form"> Let's Invest! </button>
+	</div>
+
+	<div id="DIVTWO">
+		<div id="explain">
+			<p id="back"> Back </p>
+			<br><br><br><br>
+			When you want your money to grow, you can do something called investing. That means spending some of your money to buy little pieces of a company. This helps the company, because when people buy these little pieces, called shares, it gives the company the money it needs to keep growing. <br><br>To say thank you, the companies give you some of the money they earn later! There are lots interesting and different ways to invest.  <br><br>One is stock, which buys shares from just one company. Another is a mutual fund, which buys shares from many companies in one bundle, and is handled by a manager who is trying to beat the market. The last is called an exchange-traded fund. It's made of mutual funds (among other things) and trades them back and forth over the day with others, so that it stays as stable as it can be to keep up with the market.
+		</div>
+		<div id="invest-graph">
+			<h1> Returns </h1>
+			<div id="returns" style="min-height: 400px; min-width: 310px; display:block; padding-top: 30px;"> </div>
+		</div>
+	</div>
 </div>
 <div id="footer">
+	<p>Created by <a href="https://github.com/sara">SaraAnn Stanway</a>, <a href="https://github.com/ipat81">Ishan Patel</a>, and <a href="https://github.com/bigolu">Biggie Emmanuel</a>    </p>
 </div>
+
+<script type="text/javascript" src="../static/js/app.js"></script>
 </body>
 </html>

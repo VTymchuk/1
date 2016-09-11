@@ -3,26 +3,26 @@ html
 	height: 100%;
 	width: 100;
 }
+
 body
 {
 	margin: 0;
 	height: 100%;
 	width: 100%;
+	overflow-x:hidden;
+	font-family: "Baloo Tamma" !important;
+	background-color: #cceaf4 !important;
 }
 h2, h3, h4, h5, h6 {
 	text-align: center;
 }
 h1
 {
-	font-family: "Comic Sans MS";
 	color: purple;
 }
-h3
-{
-	display: block !important;
-}
 #PROJECTIONS {
-	margin-top: 5%;
+	margin-top: 0%;
+	padding-right: 300px;
 }
 
 .container{
@@ -41,9 +41,10 @@ h3
 
 iframe
 {
-	height: 60%;
-	width :80%;
+	height: 55%;
+	width: 100%;
 	margin-left: 5%;
+	border: none;
 }
 #TWO
 {
@@ -52,18 +53,16 @@ iframe
 }
 #goals
 {
-font-family: "Comic Sans MS";
 color: purple;
 }
 
 #goalsOuterBox
 {
-background: blue;
+background-color: #a1a1a1;
  padding: 20px; 
  width: 200px;
  height: 450px; 
  text-align: center;
- font-family: "Comic Sans MS";
  font-weight: 5px;
  color: purple;
 
@@ -71,31 +70,34 @@ background: blue;
 }
 img
 {
-	width: 3em;
+	width: 1em;
 	height: auto;
 }
 #savingsBox
 {
-	background : pink;
+	background : #ff3c3a;
 	padding: 20px;
 	padding-right: 30px; 
     width: 150px;
     height: 150px; 
     text-align: center;
-    font-family: "Comic Sans MS";
-    color: purple;
+    color: #cceaf4;
+
+
 
 }
 
+#TARGET{
+	width: 70px;
+}
 #level
 {
-	color: purple;
+	color: #cceaf4;
 	padding: 20px; 
 	padding-right: 30px;
     height: 175px; 
-    background : green;
+    background-color : #ff3c3a;
     text-align: center;
-    font-family: "Comic Sans MS";
 }
 
 form {
@@ -109,16 +111,29 @@ form {
 
 
 #section-two-container {
-	width: 100%;
+	width: 200%;
 	height: 100%;
+	position: relative;
+}
+#DIVONE{
+	width:46%;
+	height: 90%;
+	display: inline-flex;
+	flex-flow: column nowrap;
+	align-items: center;
+	justify-content: center;
+}
+#DIVTWO{
+	width:46%;
+	height: 90%;
+	display: inline-flex;
 }
 
 #footer {
 	height: 3%;
 	width: 100%;
-	background-color: blue;
+	text-align: right;
 }
-
 #navbar {
 	position: fixed;
 	top: 0;
@@ -126,7 +141,7 @@ form {
 	z-index: 9999;
 	width: 100%;
 	height: 5%;
-	background-color: blue;
+	background-color: #fe3b3d;
 	display: flex;
 	flex-flow: row nowrap;
 }
@@ -134,4 +149,70 @@ form {
 #navbar > a {
 	margin: 5%;
 	margin-top: 8px;
+	color:black;
+}
+
+.invest-form {
+	margin-bottom: 2%;
+}
+
+#cash, #theDate {
+	-webkit-appearance: none;
+	width: 250px;
+	height: 30px;
+	border: none;
+	border-bottom: medium solid black;
+	margin-bottom: 40px;
+	margin-top: 30px;
+}
+
+#invest {
+	-webkit-appearance: none;
+	height: 90px;
+	width: 350px;
+	font-size: 40px;
+	border-radius: 20px;
+}
+
+#explain{
+	width: 30%;
+	height: 90%;
+	display: inline-flex;
+	flex-flow: column nowrap;
+	align-items: center;
+	padding-top: 3%;
+	text-align: justify;
+}
+
+#invest-graph {
+	width: 70%;
+	height: 100%;
+	display: inline-flex;
+	flex-flow: column nowrap;
+	align-items: center;
+	justify-content: center;
+	padding-left: 20px;
+}
+
+#invest-graph > h1 {
+	margin-bottom: 10px;
+	padding-top: 30px;
+}
+
+#returns{
+	height: 60%;
+	width: 100%;
+}
+
+#back:hover, nav > a:hover {
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+#TARGET {
+	margin-bottom: 10px;
+}
+
+#saveTarget {
+	color: #a1a1a1;
 }

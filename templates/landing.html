@@ -8,6 +8,7 @@
 
     <title>LANDING PAGE</title>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.1.3/js.cookie.min.js"></script> 
     <link href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css" rel="stylesheet">
     <link href="../static/css/landing.css" rel="stylesheet">
 
@@ -15,7 +16,7 @@
       <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script   src="https://code.jquery.com/jquery-3.1.0.min.js"   integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="   crossorigin="anonymous"></script>
   </head>
   <body>
     <div class="main-container">  
@@ -24,8 +25,9 @@
       <div id="splash-blank-space"></div>
       <div id="splash-login">
         <input type="email" placeholder="1111-2222-3333-4444" id="account-number">
-        <button class="button-primary">GO</button>
+        <a href="main.html"> <button class="button-primary" id="go">GO</button> </a>
       </div>
     </div>
+    <script src="../static/js/landing.js"> </script>
   </body>
 </html>
