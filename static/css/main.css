@@ -1,60 +1,137 @@
-#title
+html
 {
+	height: 100%;
+	width: 100;
+}
+body
+{
+	margin: 0;
+	height: 100%;
+	width: 100%;
+}
+h2, h3, h4, h5, h6 {
 	text-align: center;
-	font-family: "Comic Sans MS"
+}
+h1
+{
+	font-family: "Comic Sans MS";
+	color: purple;
+}
+h3
+{
+	display: block !important;
+}
+#PROJECTIONS {
+	margin-top: 5%;
 }
 
+.container{
+	display: inline-flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center	;
+}
+
+#ONE
+{
+	height: 100%;
+	width: 69%;
+}
+
+iframe
+{
+	height: 60%;
+	width :80%;
+	margin-left: 5%;
+}
+#TWO
+{
+	height:100%;
+	width: 30%;
+}
 #goals
 {
-position: fixed;
-right: 120px;
 font-family: "Comic Sans MS";
+color: purple;
 }
 
 #goalsOuterBox
 {
-position: fixed;
-right: 40px;
-bottom: 30px;
-border-radius: 25px;
 background: blue;
  padding: 20px; 
  width: 200px;
  height: 450px; 
  text-align: center;
  font-family: "Comic Sans MS";
+ font-weight: 5px;
+ color: purple;
 
 
 }
-
+img
+{
+	width: 3em;
+	height: auto;
+}
 #savingsBox
 {
-	border-radius: 25px;
 	background : pink;
-	padding: 20px; 
+	padding: 20px;
+	padding-right: 30px; 
     width: 150px;
     height: 150px; 
     text-align: center;
     font-family: "Comic Sans MS";
-
+    color: purple;
 
 }
 
-#wishList
+#level
 {
-	border-radius: 25px;
+	color: purple;
 	padding: 20px; 
-    width: 150px;
+	padding-right: 30px;
     height: 175px; 
     background : green;
     text-align: center;
     font-family: "Comic Sans MS";
 }
 
-form
-{
-	position: fixed;
-	left: 30%;
-	bottom: 30px;
+form {
+	text-align: center;
 }
 
+#section-one-container {
+	width: 100%;
+	height: 100%;
+}
+
+
+#section-two-container {
+	width: 100%;
+	height: 100%;
+}
+
+#footer {
+	height: 3%;
+	width: 100%;
+	background-color: blue;
+}
+
+#navbar {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 9999;
+	width: 100%;
+	height: 5%;
+	background-color: blue;
+	display: flex;
+	flex-flow: row nowrap;
+}
+
+#navbar > a {
+	margin: 5%;
+	margin-top: 8px;
+}

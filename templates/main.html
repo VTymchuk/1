@@ -5,25 +5,50 @@
 <title> My Homepage </title>
 </head>
 <body>
-<div id = "title"> <h1> My Balance Graph <h1> </div>
-<div id = "goals"> <h3> My Goals </h3> </div>
-<div id = "goalsOuterBox">
-<div id = "savingsBox"> Saving </div>
-<br></br>
-<div id = "wishList"> Wish List </div>
- </div>
+<nav id="navbar">
+	<a>Balance</a>
+	<a>Investments</a>
+</nav>
+<div id="section-one-container">
+	<div class = "container" id = "ONE">	
+		<h1> My Balance Graph </h1>
+		<iframe></iframe>
 
-<form>
-	In <select name  ="time">
-	<option value = 1> one week </option>
-	<option value = 2> two weeks </option>
-	<option value = 3> three weeks </option>
-	<option value = 4> one month </option>
-</select>
-	<!-- us javascript here to submit on change, no submit button necessary --> 
-
-<input type = "submit">
-	you will have $___________ in your account.
-</form>	
+		<div class = "container" id = "PROJECTIONS">
+			<form> 
+				In
+				<select name = "time">
+				<option value="1">one week</option>
+				<option value="2">two weeks</option>
+				<option value="4">one month</option>
+				</select>
+				your balance will be {% balance %}
+			</form>
+			<br>
+			<form> 
+				To buy something that costs <input type = "number" > dollars will take {%%} weeks
+			</form>
+		</div>
+	</div>
+	<div class = "container" id = "TWO"> 
+		<h2> My Goals </h2>
+		<div id = "goalsOuterBox">
+			<div id = "savingsBox"> 
+				<h2>Saving</h2>
+				<form>
+					Target
+					<input type = "number" name = "savingGoal"> 
+				</form>
+			</div>
+			<br>
+			<div id = "level"> <h2>Your Level <h2>
+				<img src = "../static/css/ninja.png"></div>
+		</div>
+	</div>
+</div>
+<div id="section-two-container">
+</div>
+<div id="footer">
+</div>
 </body>
 </html>
