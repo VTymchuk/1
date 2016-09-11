@@ -1,4 +1,50 @@
-body
-{
-background-color: red;
+html {
+  height: 100%;
+  width: 100%;
+  font-size: 20px;
+}
+
+body {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  background-image: url("../img/dark-piggy-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#splash-title {
+  font-size: 300%;
+  margin-bottom: 1rem;
+  text-align: center;
+  border-bottom: thin solid white;
+}
+
+.main-container {
+  color: white;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-container > * {
+  margin-left: 50% !important;
+}
+
+#splash-description {
+  font-size: 75%;
+}
+
+#account-number {
+  background: transparent;
+  border: none;
+  border-bottom: thin solid white;
+  border-radius: 0;
+}
+
+#splash-blank-space {
+  height: 10%;
 }
