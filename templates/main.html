@@ -5,23 +5,50 @@
 <title> My Homepage </title>
 </head>
 <body>
-<div class = "container" id = "ONE">	
-	<h1> My Balance Graph <h1>
-</div>
-<div class = "container" id = "TWO"> 
-	<h4> My Goals </h4>
-	<div id = "goalsOuterBox">
-		<div id = "savingsBox"> 
-			<h2>Saving</h2>
-			<form>
-				Target
-				<input type = "number" name = "savingGoal"> 
+<nav id="navbar">
+	<a>Balance</a>
+	<a>Investments</a>
+</nav>
+<div id="section-one-container">
+	<div class = "container" id = "ONE">	
+		<h1> My Balance Graph </h1>
+		<iframe></iframe>
+
+		<div class = "container" id = "PROJECTIONS">
+			<form> 
+				In
+				<select name = "time">
+				<option value="1">one week</option>
+				<option value="2">two weeks</option>
+				<option value="4">one month</option>
+				</select>
+				your balance will be {% balance %}
+			</form>
+			<br>
+			<form> 
+				To buy something that costs <input type = "number" > dollars will take {%%} weeks
 			</form>
 		</div>
-		<br>
-		<div id = "level"> <h2>Your Level <h2>
-			<img src = "../static/css/ninja.png"></div>
 	</div>
+	<div class = "container" id = "TWO"> 
+		<h2> My Goals </h2>
+		<div id = "goalsOuterBox">
+			<div id = "savingsBox"> 
+				<h2>Saving</h2>
+				<form>
+					Target
+					<input type = "number" name = "savingGoal"> 
+				</form>
+			</div>
+			<br>
+			<div id = "level"> <h2>Your Level <h2>
+				<img src = "../static/css/ninja.png"></div>
+		</div>
+	</div>
+</div>
+<div id="section-two-container">
+</div>
+<div id="footer">
 </div>
 </body>
 </html>

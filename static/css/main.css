@@ -9,6 +9,9 @@ body
 	height: 100%;
 	width: 100%;
 }
+h2, h3, h4, h5, h6 {
+	text-align: center;
+}
 h1
 {
 	font-family: "Comic Sans MS";
@@ -18,10 +21,16 @@ h3
 {
 	display: block !important;
 }
+#PROJECTIONS {
+	margin-top: 5%;
+}
+
 .container{
 	display: inline-flex;
 	flex-direction: column;
 	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center	;
 }
 
 #ONE
@@ -30,6 +39,12 @@ h3
 	width: 69%;
 }
 
+iframe
+{
+	height: 60%;
+	width :80%;
+	margin-left: 5%;
+}
 #TWO
 {
 	height:100%;
@@ -83,3 +98,40 @@ img
     font-family: "Comic Sans MS";
 }
 
+form {
+	text-align: center;
+}
+
+#section-one-container {
+	width: 100%;
+	height: 100%;
+}
+
+
+#section-two-container {
+	width: 100%;
+	height: 100%;
+}
+
+#footer {
+	height: 3%;
+	width: 100%;
+	background-color: blue;
+}
+
+#navbar {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 9999;
+	width: 100%;
+	height: 5%;
+	background-color: blue;
+	display: flex;
+	flex-flow: row nowrap;
+}
+
+#navbar > a {
+	margin: 5%;
+	margin-top: 8px;
+}
