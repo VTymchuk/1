@@ -1,15 +1,31 @@
 <!DOCTYPE html>
-<html lang = "en">
-<head>
-<link rel = "stylesheet" type = "text/css" href = "../static/css/landing.css">
-<title> Capital One, Two, Three </title>
-</head>
-<body>
-<h1>Welcome to CapitalOne, Two, Three! Please enter your account number to get started</h1>
-<form>
-Account Number
-<input type = "number">
-<input type = "submit" value = "Let's Go!">
-</form>
-</body>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+
+    <title>LANDING PAGE</title>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css" rel="stylesheet">
+    <link href="../static/css/landing.css" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  </head>
+  <body>
+    <div class="main-container">  
+      <h1 class="five columns" id="splash-title"> Capital 1 2 3 </h1>
+      <p class="four columns" id="splash-description"> This app should do things. It should do good things.</p>
+      <div id="splash-blank-space"></div>
+      <div id="splash-login">
+        <input type="email" placeholder="1111-2222-3333-4444" id="account-number">
+        <button class="button-primary">GO</button>
+      </div>
+    </div>
+  </body>
 </html>
