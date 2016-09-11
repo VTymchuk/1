@@ -17,7 +17,7 @@ body {
   font-size: 300%;
   margin-bottom: 1rem;
   text-align: center;
-  border-bottom: thin solid white;
+  border-bottom: medium solid white;
 }
 
 .main-container {
@@ -42,10 +42,14 @@ body {
 #account-number {
   background: transparent;
   border: none;
-  border-bottom: thin solid white;
+  border-bottom: medium solid white;
   border-radius: 0;
 }
 
 #splash-blank-space {
   height: 10%;
+}
+
+input[type="text"] {
+  color: white;
 }
